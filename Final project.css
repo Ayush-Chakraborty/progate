@@ -1,0 +1,485 @@
+header
+{
+	background-color: steelblue;
+	height:50px;
+	opacity: 1;
+	z-index: 2;
+	position:fixed;
+	top: 0px;
+	width: 100%
+}
+h1
+{
+	color:white;
+	text-align: center;
+	font-family: nunito;
+	color: #fbc531;
+}
+h1:nth-of-type(1)
+{
+	font-size: 70px;
+}
+h1:nth-of-type(2)
+{
+	font-size: 100px;
+}
+#container
+{
+	padding-top: 50px;
+	height: 500px;
+	width: 100%;
+	background-color: black;
+}
+
+#left-container
+{
+	float: left;
+	width: 75%;
+	background-image: url("https://previews.123rf.com/images/tombaky/tombaky0812/tombaky081200210/4010012-internet-html-code-technology-black-background-Stock-Photo-coding.jpg");
+	background-blend-mode:soft-light;
+	background-size: cover; 
+	height: 100%;
+	height: 500px;
+	/*border-bottom: 2px white solid;*/
+}
+#left-container #h1
+{
+	opacity: 1;
+}
+#right-container
+{
+	background-image: url("https://d1vvp9ihshjy3m.cloudfront.net/gif/5757e856e4b0932cab7f38a2_1465378902352.gif");
+	float:left;
+	width: 25%;	
+	height: 500px;
+	border-bottom: 2px white solid;
+}
+body
+{
+	margin: 0px;
+
+}
+header div
+{
+	width: 45%;
+	color:white;
+}
+#left-header
+{
+	float: left;
+	padding: 13px;
+	font-size: 120%;
+}
+#right-header
+{
+	float: right;
+	text-align: right;
+	padding: 13px;
+	font-size: 100%;
+}
+.left-logo
+{
+	font-family:Lobster;
+	float: left;
+	font-size: 25px;
+}
+
+#space
+{
+	padding-left: 5%;
+	padding-right: 5px;
+}
+#right-header span
+{
+	margin-left: 10px;
+	border:2px solid black;
+	padding:1%;
+	cursor: pointer;
+}
+#right-header span:hover
+{
+	color:steelblue;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: all 0.5s;
+}
+.form
+{
+	opacity:0;
+	z-index: -10;
+	background-color:transparent;
+	float:right;
+	width: 20%;
+	height:400px;
+	position: relative; 
+	top: -20px;
+	left: -20px;
+	padding-right: 20px;
+}
+.form2
+{
+	opacity:0;
+	z-index: -12;
+	background-color:transparent;
+	float:right;
+	width: 20%;
+	height:400px;
+	position: absolute; 
+	top: 30px;
+	/*left: 1000px;*/
+	right: 0px;
+	/*padding-right: 20px;*/
+}
+.form3
+{
+	opacity:0;
+	z-index: -14;
+	background-color:transparent;
+	float:right;
+	width: 15%;
+	max-height:50px;
+	position: absolute; 
+	top: 20px;
+	/*left: 1000px;*/
+	right: 180px;
+	cursor: pointer;
+}
+.form3 i
+{
+	margin:5px;
+	cursor: pointer; 
+	padding-top: 10px;
+	color: white;
+}
+.star
+{
+	color: yellow;
+}
+.form-inside
+{
+	background-color: tomato;
+	margin: 10px 5px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	
+}
+.form-inside h2 span
+{
+	text-transform: uppercase;
+	border-bottom: 2px solid #487eb0;
+	color:white;
+	font-family: oxanium;
+	font-weight: normal;	
+	
+}
+.form-inside button
+{
+	text-align: center;
+	border:2px solid #7f8c8d;
+	height: 20%;
+	padding: 10px;
+	outline: none;
+	width:50%;
+	box-shadow:0px 7px #c23616; 
+	border-radius: 20px;
+	cursor: pointer;
+	background-color: #4cd137;
+	color: white;
+	transition: 0.5s;
+}
+.form-inside button:hover
+{
+	background-color: #44bd32;
+	
+}
+.form-inside button:active
+{
+	box-shadow:none;
+	position: relative;
+	top: 7px;	
+}
+.form-inside p
+{
+	color:white;
+	font-size: 17px;
+	font-family: oxanium;
+}
+.form-display
+{
+	opacity: 1;
+	z-index: 2;
+	/*height:1%*/
+	height: 80%;
+}
+
+input
+{
+	text-align: center;
+	border:2px solid #7f8c8d;
+	height: 20%;
+	border-radius: 20px;
+	padding: 10px;
+	outline: none;
+	color: #34495e;
+	background-color: #f1c40f;
+	width:50%;
+	transition: 0.3s;
+	margin: 10px 0px; 
+}
+select
+{
+	border-radius: 10px;
+	outline: none;
+	color: #34495e;
+	background-color: #f1c40f;
+}
+input:hover
+{
+	width:80%;
+	border-color: #2ecc71;
+}
+.welcome
+{
+	z-index: 1;
+	position: relative;
+	top: -500px;
+	height: 100%;
+}
+#content
+{
+	height: 250px;
+	position: absolute;
+	width: 100%;
+}
+#content div
+{
+	cursor: pointer;
+	width: 10%;
+	margin: 5% 2%;
+	padding:10px;
+	border-radius: 20px;
+	float: left;
+	text-align: center;
+	font-family: "Josefin Sans";
+	font-size: 19px;
+	transition: 0.5s;
+}
+#content div:hover
+{
+	transform:rotateY(360deg);
+}
+#contentBottom
+{
+	position: absolute;
+	top: 730px;
+	text-align: center;
+	width: 100%
+}
+#contentBottom h1 span
+{
+	border-bottom: 4px solid red;
+}
+#contentBottom h1 span span
+{
+	color: yellow;
+	font-weight: normal;
+	transition: 0.5s;
+}
+.transparent
+{
+	opacity: 0;
+}
+h2
+{
+	color: #0984e3;
+	text-transform: uppercase;
+	font-family: nunito;
+	font-weight: bold;
+	font-size: 40px;
+}
+#info
+{
+	height:1000px;
+	width: 100%
+}
+#info div
+{
+	width: 100%;
+	
+}
+.info-2
+{
+	opacity: 0;
+	transform: translateY(20px);
+	transition: 0.8s;
+}
+#info div div
+{
+	width: 40%;
+	margin: 3% 5%;
+	float: left;
+	height: 280px;
+	font-family: ABeeZee;
+}
+#info img
+{
+	height:100%;
+	width:100%;
+}
+.appear
+{
+	opacity:1;
+	transform: translateY(0px);
+}
+footer
+{
+	margin: 0px;
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+	height: 390px;
+}
+footer div:nth-of-type(1)
+{
+	width: 40%;
+	background-color: #2c3e50;
+	color:white;
+	float:left;
+	/*height: 100%;*/
+}
+li
+{
+	font-size: 16px;
+	margin: 10px;
+}
+li a
+{
+	color: white;
+	padding-top: 5px;
+}
+
+footer div:nth-of-type(2)
+{
+	width: 60%;
+	background-color: #2c3e50;
+	color:white;
+	float:left;
+}
+
+footer div:nth-of-type(1) p:nth-of-type(1)
+{
+	font-family: Pacifico;
+	font-size: 40px !important;
+	margin-left: 15px;
+	
+}
+footer div:nth-of-type(1) p:nth-of-type(2)
+{
+	font-size: 15px;
+	margin-left: 15px;
+}
+footer div:nth-of-type(2) p span
+{
+	font-size: 25px;
+	font-family: "Exo 2";
+	border-bottom: 4px solid black;
+}
+footer i
+{
+	margin:5px 25px 5px 25px;
+	height:30px;
+	width:45px;
+	text-align: center;
+	padding-top:10px;
+	transform: rotate(-30deg) skew(30deg);
+	font-size: 20px !important;
+}
+footer div:nth-of-type(2) div
+{
+	float: left;
+	width: 20%;
+}
+.opac
+{
+	opacity: 0.5;
+}
+.opac2
+{
+	opacity: 0.6;	
+}
+.opac3
+{
+	opacity: 0.7;
+}
+.opac4
+{
+	opacity: 0.8;
+}
+.opac5
+{
+	opacity: 0.9;
+}
+.opac6
+{
+	opacity: 1;
+}
+footer i
+{
+	background-color: white;
+	 opacity: 0;
+	 position: relative;
+	 transition: 0.3s;
+}
+.visible
+{
+	opacity: 1;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+.form3 i:hover
+{
+	color:yellow;
+}
+#game
+{
+	height: 600px;
+	width: 75%;
+	margin: 20px auto;
+	margin-bottom: 30px; 
+}
+#game div
+{
+	height:25%;
+	width: 15%;
+	float: left;
+	border: 1px solid white;
+	cursor: pointer;
+	color: blue;
+	text-align: center;
+	font-size: 25px;
+	background-size:cover;
+	border: 2px red solid;
+	transition: 0.5s;
+	background-image: url("https://previews.123rf.com/images/dejavu1990/dejavu19901710/dejavu1990171000014/88620699-wooden-block-background-texture.jpg");
+}	
+#game div p
+{
+	margin-top: 35%;
+}
+.rotate
+{
+	transform: rotateY(360deg);
+}
+#game h1
+{
+	text-align: center;
+}
+#game h2
+{text-align: center;
+}
+#game h3
+{
+	text-align: center;
+}
